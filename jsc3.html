@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+	<p id="test">hello world</p>
+	<input type="text" id="input">
+	<button id="b1">change text</button>
+
+	<script type="text/javascript">
+		
+		/*var name="ajay"
+
+		alert(name)
+		var x=9.7
+		alert(x)*/
+		document.getElementById('b1').onclick=function() {
+
+			//when we click the button the text in <P> should get replaced by ,whatever user types in the box
+
+			var textEntered = "";
+
+			textEntered=document.getElementById('input').value;
+
+			document.getElementById('test').innerHTML=textEntered;
+
+
+		}
+	</script>
+</body>
+</html>
